@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d9e0e7, #f1f4f8); /* Soft gray and blue gradient */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: rgba(40, 61, 74, 0.1); /* Semi-transparent dark blue */
+  padding: 40px 30px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  color: #3a506b; /* Dark blue text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.avatar {
+  margin-bottom: 20px;
+}
+
+.avatar img {
+  width: 60px;
+  background-color: #f28f8f; /* Soft pink for avatar background */
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #3a506b; /* Dark blue text color */
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.toggle-buttons button.active {
+  border-color: #f28f8f; /* Pink border for active button */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: none;
+  border-bottom: 1px solid rgba(58, 80, 107, 0.5); /* Dark blueish gray */
+  background: transparent;
+  color: #3a506b; /* Dark blue text color */
+  font-size: 0.9em;
+}
+
+.input-group input::placeholder {
+  color: #a0b0c0; /* Light grayish blue */
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  color: #a0b0c0; /* Light grayish blue */
+}
+
+.options a {
+  color: #a0b0c0; /* Light grayish blue */
+  text-decoration: none;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #3a506b; /* Dark blue button background */
+  border: none;
+  border-radius: 5px;
+  color: #f8f8f8; /* Off-white text color */
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #2b3d50; /* Slightly darker blue on hover */
+}
