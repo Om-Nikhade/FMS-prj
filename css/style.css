@@ -37,6 +37,12 @@ html {
      overflow-x: hidden !important;
 }
 
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
      color: #666666;
      font-size: 14px;
@@ -331,11 +337,10 @@ button {
 }
 .services_section {
     width: 100%;
-    float: left;
+    float: right;
     background-image: url(../images/services-bg.png);
+
     height: auto;
-    margin-top: 75px;
-    padding-bottom: 60px;
     background-size: 100%;
 }
 
@@ -344,7 +349,7 @@ button {
     float: left;
     font-size: 34px;
     color: #282c47;
-    padding-top: 10px;
+    
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -397,10 +402,29 @@ button {
     float: left;
 }
 
-.what_we_do_section{
+.what_we_do_section {
+    margin-bottom: 30px;
     width: 100%;
     float: left;
+    display: flex;
+    flex-direction: column; /* Stacks the elements vertically */
+    align-items: center; /* Horizontally centers child elements */
 }
+
+.what_we_do_section_2 .row {
+    display: flex; /* Use flexbox for the row */
+    justify-content: center; /* Center the boxes horizontally */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Adds spacing between the boxes */
+}
+
+.box_main {
+    text-align: center; /* Centers the content inside each box */
+}
+
+
+
+
 .what_taital {
     width: 100%;
     float: left;
@@ -624,9 +648,28 @@ button {
     margin-left: 0px;
     margin-top: 0px;
 }
-.team_section{
+.team_section {
     width: 100%;
-    float: left;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Align text in the center */
+    /* Add padding for spacing */
+}
+
+.team_section_2 .row {
+    display: flex; /* Use Flexbox for the row */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Add space between columns */
+}
+
+.col-sm-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content in each column */
+    text-align: center; /* Align text inside each column */
 }
 .what_text_1 {
     width: 50%;
