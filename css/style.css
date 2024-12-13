@@ -827,44 +827,42 @@ button {
 }
 .subscribe_bt{
     width: 100%;
-    float: left;
+
 }
 .subscribe_bt a{
     width: 170px;
-    float: left;
     font-size: 18px;
     color: #ffffff;
     background-color: #ff5a58;
     height: auto;
-    padding: 5px 0px;
+    padding: 8px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 22px;
+    margin-top:22px;
+    margin-left: -10px;
 }
 .footer_social_icon{
     width: 100%;
-    float: left;
+    margin-left: 28px;
 }
 .footer_social_icon ul{
-    margin: 0px;
-    padding: 0px;
+    
+   text-align: center;
+    display: flex;
+    
 }
 .footer_social_icon li {
-    float: left;
     padding: 35px 15px 0px 0px;
 }
 .footer_images{
     width: 100%;
-    float: left;
 }
-.footer_images_left {
+.footer_images_center {
     width: 32%;
-    float: left;
+    margin-left: 90px;
+   
 }
-.footer_images_right{
-    width: 50%;
-    float: left;
-}
+
 .image_12 {
     width: 88%;
     float: left;
@@ -885,7 +883,7 @@ button {
     text-align: center;
     font-size: 16px;
     margin-left: 0px;
-    padding: 10px 0px;
+    padding: 45px;
 }
 .copyright_text a{
     color: #ffffff
